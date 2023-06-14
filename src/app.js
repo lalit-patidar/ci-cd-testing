@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.send("server is running")
 })
 
+
+app.get('/new-req', (req, res) => {
+    res.send("this si new req....")
+})
+
 app.post('/add-user', (req, res) => {
     res.json({message: "user added success", ...req.body})
 })
